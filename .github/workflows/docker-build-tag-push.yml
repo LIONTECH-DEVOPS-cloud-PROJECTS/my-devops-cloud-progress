@@ -8,7 +8,7 @@ on:
 
 env:
   REGISTRY: docker.io
-  IMAGE_NAME: foncham
+  IMAGE_NAME: dyimb
   DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
 
 jobs:
@@ -55,7 +55,7 @@ jobs:
 
       # - name: Pull and run
       #   run: |
-      #     docker stop foncham || true
-      #     docker rm foncham || true
+      #     docker stop dyimb || true
+      #     docker rm dyimb || true
       #     docker pull ${{ env.REGISTRY }}/${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
-      #     docker run -d -p 8000:80 --name foncham ${{ env.REGISTRY }}/${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
+      #     docker run -d -p 8000:80 --name dyimb ${{ env.REGISTRY }}/${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
